@@ -1,0 +1,310 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Akhir Css Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(235, 236, 238);
+    margin-bottom: 3rem; /* Sesuaikan dengan tinggi footer */
+}
+
+
+/* Bagian Navbar */
+.container-navbar{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    box-sizing: border-box;
+    background-color: grey;
+    justify-content: space-between;
+}
+
+.greeting{
+    padding: 1rem;
+    font-family: "poppins", sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-list ul{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.navbar-list ul li {
+    margin-right: 1rem; 
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.navbar-list a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-list a:hover{
+    background-color: rgb(255, 81, 81);
+    color: black;
+    padding: 6px;
+    border-radius: 6px;
+    transition: 1s;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.navbar-list .beranda{
+    color: rgb(255, 174, 0);
+}
+
+.logo{
+    color: rgb(114, 255, 48);
+}
+/* Akhir Navbar */
+
+
+/* Bagian Main Bagan Menu */
+.container-main{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+}
+
+.article{
+    flex: 2;
+    padding: 10px;
+    color: #fff;
+    /* text-align: center; */
+    border-radius: 5px;
+}
+
+.article h1{
+    font-family: "poppins", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(61, 60, 60);
+}
+
+.aside{
+    flex: 1;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    -webkit-box-shadow: 7px 10px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 10px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 10px 12px 0px rgba(0,0,0,0.75);
+}
+
+.aside p{
+    color: black;
+    padding: 5px;
+    font-family: "poppins", sans-serif;
+    font-size: 1rem;
+}
+
+.aside i{
+    font-style: italic;
+}
+
+.welcome{
+    font-weight: bold;
+}
+
+.pembuka{
+    color: black;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}
+
+button{
+    margin-top: 20px;
+    background-color: rgb(255, 153, 0);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+button a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: blue;
+    font-family: "poppins", sans-serif;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: grey;
+    color: white;
+    border-radius: 8px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+button a:hover{
+    color: white;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+/* Akhir main */
+
+
+/* Bagian footer */
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: grey;
+    text-align: center;
+}
+
+.footer h1{
+    margin-top: 0.9rem;
+}
+/* Akhir Footer */
+
+
+/* Responsif */
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Navbar responsif */
+    .container-navbar {
+        display: flex;
+        flex-direction: column; /* Elemen navbar menjadi vertikal */
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar-list ul {
+        display: flex;
+        flex-direction: column; /* List item menjadi vertikal */
+        padding: 0;
+    }
+
+    .navbar-list ul li {
+        margin: 0.5rem 0; /* Jarak antar item lebih kecil */
+    }
+
+    /* Bagan Menu responsif */
+    .container-main {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column; /* Susunan kolom menjadi vertikal */
+        gap: 20px; /* Jarak antar kolom */
+    }
+
+    .article,
+    .aside {
+        flex: none; /* Kolom tidak lagi berbagi ruang */
+        width: 95%; /* Lebar penuh untuk perangkat kecil */
+    }
+
+    .article h1{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Navbar lebih kecil */
+    .greeting {
+        font-size: 1.2rem; /* Ukuran font lebih kecil */
+    }
+
+    .navbar-list ul li {
+        font-size: 1rem; /* Ukuran font item navbar lebih kecil */
+    }
+
+    /* Footer lebih kecil */
+    .footer {
+        height: 3rem;
+    }
+
+    .footer h1 {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+}

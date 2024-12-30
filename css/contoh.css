@@ -1,0 +1,97 @@
+/* 1. Reset Gaya Default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 2. Gaya Dasar */
+  body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  /* 3. Variabel CSS */
+  :root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-size: 16px;
+  }
+  
+  /* 4. Tata Letak Responsif */
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 900px;
+  }
+  
+  .box {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: scale(1.1);
+  }
+  
+  /* 5. Media Query */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  /* 6. Animasi */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .header h1 {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+  }
+  
+  .footer .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer .button:hover {
+    background-color: var(--secondary-color);
+  }
+  
